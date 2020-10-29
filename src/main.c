@@ -59,8 +59,8 @@ int main() {
     double distance_d_points;
     int step = 1;
 
-    float_delta = 0.0000f;
-    double_delta = 0.0000;
+    float_delta = 0.00001f;
+    double_delta = 0.00001;
     do
     {
         printf("\n\n ############### Test [%d] ###############" , step);
@@ -82,5 +82,5 @@ int main() {
         double_delta /= 2.000;
         float_delta /= 2.000f;
         ++step;
-    } while ((distance_d_points!= 0) || (distance_f_points > 0.000001f));
+    } while ((distance_d_points > 0) || (distance_f_points > 0.000001f));
 }
